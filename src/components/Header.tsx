@@ -1,9 +1,10 @@
 "use client";
-
 import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useState, forwardRef } from "react";
+import ClearIcon from "../../public/icons/ClearIcon";
+import CalendarIcon from "../../public/icons/CalendarIcon";
 
 interface HeaderData {
   username: string;
@@ -17,41 +18,6 @@ interface HeaderProps {
   data: HeaderData;
   onDateChange?: (from: Date | null, to: Date | null) => void;
 }
-
-const CalendarIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-    <rect
-      x="1.5"
-      y="2.5"
-      width="13"
-      height="12"
-      rx="1.5"
-      stroke="currentColor"
-      strokeWidth="1.2"
-    />
-    <path
-      d="M1 5.5H15M4.5 1V4M11.5 1V4"
-      stroke="currentColor"
-      strokeWidth="1.2"
-      strokeLinecap="round"
-    />
-    <circle cx="5" cy="9" r="0.5" fill="currentColor" />
-    <circle cx="8" cy="9" r="0.5" fill="currentColor" />
-    <circle cx="11" cy="9" r="0.5" fill="currentColor" />
-    <circle cx="5" cy="12" r="0.5" fill="currentColor" />
-    <circle cx="8" cy="12" r="0.5" fill="currentColor" />
-    <circle cx="11" cy="12" r="0.5" fill="currentColor" />
-  </svg>
-);
-
-const ClearIcon = () => (
-  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-    <path
-      d="M11.3137 9.89949L7.07107 5.65685L11.3137 1.41421L9.8995 -4.64916e-06L5.65686 4.24264L1.41422 -4.64916e-06L6.19888e-06 1.41421L4.24265 5.65685L6.19888e-06 9.89949L1.41422 11.3137L5.65686 7.07106L9.8995 11.3137L11.3137 9.89949Z"
-      fill="currentColor"
-    />
-  </svg>
-);
 
 const DateInput = forwardRef<
   HTMLDivElement,

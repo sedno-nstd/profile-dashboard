@@ -1,0 +1,27 @@
+export default function CalendarIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <rect
+        x="1.5"
+        y="2.5"
+        width="13"
+        height="12"
+        rx="1.5"
+        stroke="currentColor"
+        strokeWidth="1.2"
+      />
+      <path
+        d="M1 5.5H15M4.5 1V4M11.5 1V4"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      <circle cx="5" cy="9" r="0.5" fill="currentColor" />
+      <circle cx="8" cy="9" r="0.5" fill="currentColor" />
+      <circle cx="11" cy="9" r="0.5" fill="currentColor" />
+      <circle cx="5" cy="12" r="0.5" fill="currentColor" />
+      <circle cx="8" cy="12" r="0.5" fill="currentColor" />
+      <circle cx="11" cy="12" r="0.5" fill="currentColor" />
+    </svg>
+  );
+}
